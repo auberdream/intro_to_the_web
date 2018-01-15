@@ -13,8 +13,8 @@ get '/ellie' do
   "it's me"
 end
 
-get '/named-cat' do
-  p params[:name]
+post '/named-cat' do
+  p params
   @names = params[:name]
   erb(:index)
 end
@@ -22,4 +22,8 @@ end
 get '/random-cat' do
   @names = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
+end
+
+get '/cat_form' do
+  erb(:cat_form)
 end
