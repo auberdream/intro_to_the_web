@@ -12,3 +12,9 @@ end
 get '/ellie' do
   "it's me"
 end
+
+get '/cat' do
+  "<div>
+    <img src='http://bit.ly/1eze8aE' style='border: red dashed'>
+   </div>"
+end
