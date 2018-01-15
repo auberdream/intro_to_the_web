@@ -5,3 +5,10 @@
 <div>
   <img src='http://bit.ly/1eze8aE' style='border: red dashed'>
 </div>
+
+<%=
+  '<form action="/named-cat">
+    <label for ="name">Name:</label>
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>' if !@names %>
